@@ -8,3 +8,4 @@ class CommentSerializer(ModelSerializer):
 
         model = Comments
         fields = ['id', 'new', 'author_name', 'text']
+        read_only_fields = ['new', ]
